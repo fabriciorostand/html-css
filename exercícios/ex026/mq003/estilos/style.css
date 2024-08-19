@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/* Declarações gerais */
+
+@media all {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    html, body {
+        height: 100vh;
+        width: 100vw;
+        background-color: #233eff;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    h1 {
+        color: white;
+        text-shadow: 2px 2px 0px black;
+        padding: 10px;
+    }
+}
+
+/* Declarações Retrato*/
+
+@media screen and (orientation: portrait) {
+    body {
+        background-image: url(C:/Users/Fabricio/Desktop/estudos/html-css/exercícios/ex026/imagens/cev-portrait.jpg);
+        background-position: center bottom;
+    }
+}
+
+/* Declarações Paisagem */
+
+@media screen and (orientation: landscape) {
+    body {
+        background-image: url(C:/Users/Fabricio/Desktop/estudos/html-css/exercícios/ex026/imagens/cev-landscape.jpg);
+        background-position: left bottom;
+    }
+}
