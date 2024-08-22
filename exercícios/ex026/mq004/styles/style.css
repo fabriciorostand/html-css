@@ -41,6 +41,8 @@ img {
     margin: auto;
 }
 
-#itablet, #iprint, #idesktop, #itv {
-    display: none;
-}
+#iphone { display: block; }
+#itablet { display: none; }
+#iprint { display: none; }
+#idesktop { display: none; }
+#itv { display: none; }

@@ -3,5 +3,68 @@
 /* Todas as demais mídias */
 
 @media print {
-    
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main > h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita através do site www.cursoemvideo.com';
+        text-decoration: overline;
+    }
+
+    #iphone { display: none; }
+    #itablet { display: none; }
+    #iprint { display: block; }
+    #idesktop { display: none; }
+    #itv { display: none; }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url(C:/Users/Fabricio/Desktop/estudos/html-css/exercícios/ex026/imagens/back-tablet.jpg);
+    }
+
+    #iphone { display: none; }
+    #itablet { display: block; }
+    #iprint { display: none; }
+    #idesktop { display: none; }
+    #itv { display: none; }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url(C:/Users/Fabricio/Desktop/estudos/html-css/exercícios/ex026/imagens/back-pc.jpg);
+    }
+
+    #iphone { display: none; }
+    #itablet { display: none; }
+    #iprint { display: none; }
+    #idesktop { display: block; }
+    #itv { display: none; }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(C:/Users/Fabricio/Desktop/estudos/html-css/exercícios/ex026/imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+    }
+
+    #iphone { display: none; }
+    #itablet { display: none; }
+    #iprint { display: none; }
+    #idesktop { display: none; }
+    #itv { display: block; }
 }
